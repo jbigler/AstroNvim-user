@@ -1,14 +1,30 @@
+local utils = require "astronvim.utils"
+
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      if opts.ensure_installed ~= "all" then
+        opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "ruby")
+      end
+    end,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "ruby_ls") end,
+  },
+  {
+    "jay-babu/mason-null-ls.nvim",
+    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "rubocop") end,
+  },
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "suketa/nvim-dap-ruby",
+      name = "dap-ruby",
+      opts = {},
+    },
+  },
   {
     "tpope/vim-rails",
     event = "BufRead",
