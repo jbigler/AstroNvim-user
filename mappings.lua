@@ -34,6 +34,18 @@ return {
     [";"] = { ":", desc = "Map semicolon to colon"},
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>q"] = {
+      function()
+        for _, ui in pairs(vim.api.nvim_list_uis()) do
+          if ui.chan and not ui.stdout_tty then
+            vim.fn.chanclose(ui.chan)
+          else
+            vim.cmd("confirm q")
+          end
+        end
+      end,
+      desc = "Disconnect from Remote Neovim"
+    },
   },
   t = {
     -- setting a mapping to false will disable it
