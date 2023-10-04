@@ -14,5 +14,5 @@ return {
   { import = "astrocommunity.pack.typescript"},
   { import = "astrocommunity.pack.clojure"},
   { import = "astrocommunity.pack.tailwindcss"},
-  { import = "astrocommunity.completion.codeium-vim"},
+  -- { import = "astrocommunity.completion.codeium-vim"},
 }
