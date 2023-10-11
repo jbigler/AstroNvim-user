@@ -15,5 +15,6 @@ return {
   { import = "astrocommunity.pack.typescript"},
   { import = "astrocommunity.pack.clojure"},
   { import = "astrocommunity.pack.tailwindcss"},
+  { import = "astrocommunity.pack.full-dadbod"},
   -- { import = "astrocommunity.completion.codeium-vim"},
 }
