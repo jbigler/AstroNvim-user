@@ -10,7 +10,7 @@ return {
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
   { import = "astrocommunity.colorscheme.dracula-nvim" },
   { import = "astrocommunity.colorscheme.nordic-nvim" },
-  { import = "astrocommunity.utility.neodim" },
+  -- { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.motion.nvim-surround"},
   { import = "astrocommunity.pack.typescript"},
   { import = "astrocommunity.pack.clojure"},
