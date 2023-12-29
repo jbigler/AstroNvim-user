@@ -11,12 +11,12 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "ruby_ls") end,
+    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "solargraph") end,
   },
-  {
-    "jay-babu/mason-null-ls.nvim",
-    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "rubocop") end,
-  },
+  -- {
+  --   "jay-babu/mason-null-ls.nvim",
+  --   opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "rubocop") end,
+  -- },
   {
     "mfussenegger/nvim-dap",
     dependencies = {
