@@ -8,7 +8,7 @@ return {
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
-  { import = "astrocommunity.colorscheme.dracula-nvim" },
+  -- { import = "astrocommunity.colorscheme.dracula-nvim" },
   { import = "astrocommunity.colorscheme.nordic-nvim" },
   -- { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.motion.nvim-surround"},

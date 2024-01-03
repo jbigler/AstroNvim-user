@@ -10,4 +10,8 @@ return {
   --   end,
   -- },
   { "savq/melange-nvim"},
+  {"mcchrish/zenbones.nvim",
+    dependencies = {
+      "rktjmp/lush.nvim"}
+  }
 }
