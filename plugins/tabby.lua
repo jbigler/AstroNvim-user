@@ -3,6 +3,6 @@ return {
   -- event = "BufRead *.rb",
   lazy = false,
   init = function()
-    vim.g.tabby_keybinding_accept = '<C-CR>'
+    vim.g.tabby_keybinding_accept = '<C-t>'
   end
 }
