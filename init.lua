@@ -50,7 +50,16 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "rubocop",
+    },
+    config = {
+      rubocop = function()
+        return {
+          filetypes = { "ruby" },
+          cmd = { "bundle", "exec", "rubocop", "--lsp" },
+          root_dir = require("lspconfig.util").root_pattern("Gemfile", ".git"),
+        }
+      end,
     },
   },
 
