@@ -18,6 +18,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.full-dadbod" },
+  { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.workflow.hardtime-nvim" },
   -- { import = "astrocommunity.completion.codeium-vim"},
 }
