@@ -1,6 +1,6 @@
 return {
   "TabbyML/vim-tabby",
-  event = "AstroFile",
+  -- event = "BufRead",
   lazy = false,
   init = function()
     vim.g.tabby_keybinding_accept = "<C-y>"
