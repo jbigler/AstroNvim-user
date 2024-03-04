@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.motion.nvim-spider" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.pack.typescript" },
