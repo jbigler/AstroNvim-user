@@ -7,6 +7,21 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.completion.copilot-lua" },
+  { -- further customize the options set by the community
+    "zbirenbaum/copilot.lua",
+    opts = {
+      suggestion = {
+        keymap = {
+          accept = "<M-g>",
+          accept_word = false,
+          accept_line = false,
+          next = "<M-f>",
+          prev = "<M-d>",
+          dismiss = "<M-a>",
+        },
+      },
+    },
+  },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
