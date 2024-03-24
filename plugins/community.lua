@@ -37,5 +37,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.full-dadbod" },
+  { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.utility.noice-nvim" },
 }

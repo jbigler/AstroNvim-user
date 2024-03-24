@@ -31,7 +31,14 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- Use semicolon
-    [";"] = { ":", desc = "Map semicolon to colon"},
+    [";"] = { ":", desc = "Map semicolon to colon" },
+    -- Page up and down go to center of screen
+    ["<C-u>"] = { "<C-u>zz", desc = "Half page up" },
+    ["<C-d>"] = { "<C-d>zz", desc = "Half page down" },
+    ["n"] = { "nzzzv", desc = "Move to next search item" },
+    ["N"] = { "Nzzzv", desc = "Move to previous search item" },
+    ["C-f"] = { "C-fzz", desc = "Page down" },
+    ["C-b"] = { "C-bzz", desc = "Page up" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>q"] = {
@@ -40,11 +47,11 @@ return {
           if ui.chan and not ui.stdout_tty then
             vim.fn.chanclose(ui.chan)
           else
-            vim.cmd("confirm q")
+            vim.cmd "confirm q"
           end
         end
       end,
-      desc = "Disconnect from Remote Neovim"
+      desc = "Disconnect from Remote Neovim",
     },
   },
   t = {
